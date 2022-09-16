@@ -1,64 +1,39 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Blog App
 
-> This Blog app will is a classic example of a blog website. This is a fully functional website that show the list of posts and empower readers to interact with them by adding comments and liking posts.
-
-
-## Built With
-
-- Major: Ruby, HTML,CSS
-- Frameworks: `Rails`, `Rspec`
-- Technologies: Git, Gitflow, Linters, Github, PostgreSql
-
-## Live Demo (not available yet)
-
-<!-- [Live Demo Link](https://livedemo.com) -->
-
+The Blog app is a classic example of a blog website that show the list of posts and empower readers to interact with them by adding comments and liking posts.
+Built with: Ruby on Rails
 
 ## Getting Started
-To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-- Have a computer and internet connection
-- Have `Ruby` installed on your computer
-- Have `Rails` installed on your computer
-- Have a basic knowledge of `Ruby` and `OOP` concept
-- Have a basic knowledge of `Rails`
-- Have a general understanding of what testing is
-- Have `visual-studio code` or any other code editor installed on your computer.
+Open your terminal, move to the directory where you want to clone the app (i.e cd Documents)
+Enter git clone `https://github.com/sarazaToussaint/Blog.git`
+Change to the directory you just clone into (i.e cd blog)
+Include any possible changes and run "git add ."
+Commit the changes with a descriptive message (i.e xyz features added)
+Push the changes to changes to the repository (i.e git push)
 
-### Setup
-- In order to get a copy of this project you need to download it from https://github.com/Chrissiku/Rails-Blog
-- Extract the zipped file and open it in your code editor
-### Install
-- Run the command bellow in your terminal to get all required files
-```
-bundle install
-```
+## Prerequisites
 
-```
-npm install
-```
-### Run tests
-you can run one of the following command in your terminal
-1. Run testing
-```Ruby
-rspec spec
-```
-2. Run linters
-```Ruby
-> npx stylelint "**/*.{css,scss}"
-> Rubocop --color
-> Rubocop -A
-```
-## Authors
+- Ruby
+- Rails
+- npm
 
-👤 **Chris Siku**
+## Setup
 
-- GitHub: [@githubhandle](https://github.com/Chrissiku)
-- Twitter: [@twitterhandle](https://twitter.com/christian_siku)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/christian-siku/)
+- System dependencies
+- linters for Ruby on Rails
+- PostgreSQL DataBase
+
+## Run tests
+
+To test this app run `rspec`
+
+## Author
+
+- GitHub: [@githubhandle](https://github.com/sarazaToussaint)
+- Twitter: [@twitterhandle](https://twitter.com/ToussaintSaraz1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/toussaintsaraza/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -68,3 +43,13 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.

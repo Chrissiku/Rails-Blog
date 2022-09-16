@@ -1,7 +1,11 @@
 class Post < ApplicationRecord
-  belongs_to :user, class_name: 'User', foreign_key: 'AuthorId'
-  has_many :comments, class_name: 'Comment', foreign_key: 'PostId'
-  has_many :likes, class_name: 'Like', foreign_key: 'PostId'
+  belongs_to :user, class_name: 'User', foreign_key: 'authorId'
+  has_many :comments, class_name: 'Comment', foreign_key: 'authorId'
+  has_many :likes, class_name: 'Like', foreign_key: 'authorId'
+
+  validates :Title, presence: true, length: { maximum: 250 }
+  validates :CommentsCounter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
+  validates :LikesCounter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
 
   after_save :update_counter
 
@@ -12,11 +16,4 @@ class Post < ApplicationRecord
   def recent_comment
     comments.order(created_at: :desc).limit(5)
   end
-
-  validates :Title, presence: true, length: { maximum: 250 }
-  validates :CommentsCounter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
-  validates :LikesCounter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
 end
-
-# Create post.
-# first_post = Post.create(AuthorId: 3, Title: 'Hello', Text: 'This is my first post')

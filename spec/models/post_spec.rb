@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-  user = User.create(Name: 'Developer', Photo: 'https://avatars.githubusercontent.com/u/101924220?v=4',
-                     Bio: 'Software developer', PostsCounter: 0)
+  user = User.create(Name: 'Tester', Photo: 'https://unsplash.com/photos/F_-0BxGuVvo', Bio: 'Tester from Mexico.',
+                     PostsCounter: 0)
   post = Post.new(Title: 'Rspec test', Text: 'rspec test for post model', CommentsCounter: 1, LikesCounter: 0,
                   authorId: user.id)
 

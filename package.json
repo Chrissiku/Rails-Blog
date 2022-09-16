@@ -1,8 +1,23 @@
 {
-  "devDependencies": {
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
-  }
+  "name": "rails-blog",
+  "version": "1.0.0",
+  "description": "The Blog app is a classic example of a blog website that show the list of posts and empower readers to interact with them by adding comments and liking posts.\r Built with: Ruby on Rails",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chrissiku/Rails-Blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chrissiku/Rails-Blog/issues"
+  },
+  "homepage": "https://github.com/Chrissiku/Rails-Blog#readme"
 }
