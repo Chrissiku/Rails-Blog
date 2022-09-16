@@ -5,8 +5,6 @@ ruby '3.1.2'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 
-gem 'rspec-rails', '~> 4.0.0.beta2'
-
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 
 gem 'sprockets-rails'
@@ -28,6 +26,7 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'rspec-rails'
 end
 
 group :development do
