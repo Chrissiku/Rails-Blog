@@ -8,7 +8,7 @@
 ## Built With
 
 - Major: Ruby, HTML,CSS
-- Frameworks: `Rails`
+- Frameworks: `Rails`, `Rspec`
 - Technologies: Git, Gitflow, Linters, Github, PostgreSql
 
 ## Live Demo (not available yet)

@@ -20,4 +20,3 @@ end
 
 # Create post.
 # first_post = Post.create(AuthorId: 3, Title: 'Hello', Text: 'This is my first post')
-
