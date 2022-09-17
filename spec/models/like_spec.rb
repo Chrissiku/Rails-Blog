@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'rails_helper'
 
 RSpec.describe Like, type: :model do
@@ -15,9 +13,9 @@ RSpec.describe Like, type: :model do
     end
 
     it 'Increases the value of likes_counter' do
-      counter = Post.find(post.id).LikesCounter
+      counter = Post.find(post.id).likesCounter
       like.update_counter
-      expect(Post.find(post.id).LikesCounter).to eq(counter + 1)
+      expect(Post.find(post.id).likesCounter).to eq(counter + 1)
     end
   end
 end

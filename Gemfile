@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -10,6 +8,8 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 
 gem 'rexml'
+
+gem 'ffi'
 
 gem 'sprockets-rails'
 
