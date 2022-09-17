@@ -7,6 +7,10 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 
+gem 'rexml'
+
+gem 'ffi'
+
 gem 'sprockets-rails'
 
 gem 'pg', '~> 1.1'
@@ -26,6 +30,7 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'rspec-rails'
 end
 
 group :development do
