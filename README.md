@@ -1,24 +1,30 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+### Run tests
+you can run one of the following command in your terminal
+1. Run testing
+```Ruby
+rspec spec
+```
+2. Run linters
+```Ruby
+> npx stylelint "**/*.{css,scss}"
+> Rubocop --color
+> Rubocop -A
+```
+## Authors
 
-Things you may want to cover:
+👤 **Chris Siku**
 
-* Ruby version
+- GitHub: [@githubhandle](https://github.com/Chrissiku)
+- Twitter: [@twitterhandle](https://twitter.com/christian_siku)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/christian-siku/)
+## 🤝 Contributing
 
-* System dependencies
+Contributions, issues, and feature requests are welcome!
 
-* Configuration
+Feel free to check the [issues page](../../issues/).
 
-* Database creation
+## Show your support
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Give a ⭐️ if you like this project!
