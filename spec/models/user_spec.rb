@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   user = User.create(name: 'Christian', photo: 'https://avatars.githubusercontent.com/u/101924220?s=40&v=4',
-                     bio: 'Software Engineer',  postsCounter: 1)
+                     bio: 'Software Engineer', postsCounter: 1)
 
   describe 'Tests for User model validations' do
     it 'is a valid user' do
