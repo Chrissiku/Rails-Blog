@@ -1,9 +1,5 @@
 class PostsController < ApplicationController
-    def index
-        # My code will be here
-    end
+  def index; end
 
-    def show
-        # My code will be here
-    end
+  def show; end
 end
