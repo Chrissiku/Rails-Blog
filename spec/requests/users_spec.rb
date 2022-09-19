@@ -7,7 +7,7 @@ RSpec.describe 'Users', type: :request do
       expect(response).to have_http_status(:success)
     end
 
-    it 'Should render the index template' do 
+    it 'Should render the index template' do
       get '/users/index'
       expect(response).to render_template(:index)
     end
@@ -18,14 +18,13 @@ RSpec.describe 'Users', type: :request do
     end
   end
 
-
   describe 'GET /show' do
     it 'Return http success' do
       get '/users/show'
       expect(response).to have_http_status(:success)
     end
 
-    it 'Should render the index template' do 
+    it 'Should render the index template' do
       get '/users/show'
       expect(response).to render_template(:show)
     end
