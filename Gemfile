@@ -7,13 +7,14 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 
+gem 'erb-formatter'
 gem 'rexml'
 
 gem 'ffi'
 
-gem 'sprockets-rails'
-
+gem 'bootstrap', '~> 5.1.3'
 gem 'pg', '~> 1.1'
+gem 'sprockets-rails'
 
 gem 'puma', '~> 5.0'
 

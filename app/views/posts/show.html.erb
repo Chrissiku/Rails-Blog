@@ -1,1 +1,12 @@
-<h1>Single user posts</h1>
+<p><%= @post.title %> by <%= @post.user.name%></p>
+<p>Comments: <span><%= @post.comments.count %></span>, Likes: <span><%= @post.likes.count %></span></p>
+
+<%= @post.text %>
+
+<% if @post.comments.length > 0 %>
+    <% @post.comments.each do |comment| %>
+    <p><%= comment.user.name %> : <%= comment.text %></p>
+<% end %>
+    <% else %>
+    <p>There are no comments !!</p>
+<% end %>

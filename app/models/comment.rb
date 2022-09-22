@@ -8,3 +8,6 @@ class Comment < ApplicationRecord
     post.increment!(:commentsCounter)
   end
 end
+
+# Create comment
+# Comment.create(Post: first_post, Author: second_user, Text: 'Hi Tom!' )#
