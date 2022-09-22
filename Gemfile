@@ -8,6 +8,7 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 
 gem 'rexml'
+gem 'erb-formatter'
 
 gem 'ffi'
 
