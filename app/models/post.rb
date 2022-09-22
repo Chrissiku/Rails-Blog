@@ -17,3 +17,7 @@ class Post < ApplicationRecord
     comments.order(created_at: :desc).limit(5)
   end
 end
+
+# Create post.
+# first_post = Post.create(Author: user, Title: 'Hello', Text: 'This is my first post')
+

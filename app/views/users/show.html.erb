@@ -6,10 +6,12 @@
         <p><%= @user.name %> doesn't have a post !></p>
     <% else %>
         <% @user.recent_post.each do |post| %>
-        <%= render partial: 'partials/post_helper', locals: {post: post} %>
-        <% end %>
+            <%= render partial: 'partials/post_helper', locals: {post: post} %>
+        <% end %>   
 
-        <%= link_to("See all posts", user_posts_path(@user)) %>
+         <%= link_to("See all posts", user_post_path(@user))  %> 
+         <%# <%= link_to("See all posts", render (@user.all_posts)) %>
+        <%# <%= link_to "all_posts", user_posts_path(@user), :remote => true %>
 
     <% end %>
     </div>
