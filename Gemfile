@@ -12,7 +12,7 @@ gem 'rexml'
 gem 'ffi'
 
 gem 'sprockets-rails'
-
+gem 'bootstrap', '~> 5.1.3'
 gem 'pg', '~> 1.1'
 
 gem 'puma', '~> 5.0'
