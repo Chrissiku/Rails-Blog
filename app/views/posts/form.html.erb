@@ -1,0 +1,10 @@
+<div>
+  <h1>Create a Post </h1>
+  <%= form_with model: Post, method: :post do |form| %>
+    <%= form.label :title %>
+    <%= form.text_field :title, placeholder: 'Post title ...' %><br />
+    <%= form.label :text, "Post" %>
+    <%= form.text_area :text, placeholder: 'Post here...' %><br />
+    <%= form.submit "Post Now" %>
+  <% end %>
+</div>
