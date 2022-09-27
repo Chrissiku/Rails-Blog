@@ -48,6 +48,19 @@ RSpec.describe 'User pages test index/show ', type: :feature do
       click_on @second_user.name
       expect(page).to have_current_path(user_path(@second_user))
     end
+
+    it 'Should show all comments for each post' do
+      @comment1 = Comment.create(text: 'test comment 1', user: @first_user, post: @post1)
+      @comment2 = Comment.create(text: 'test comment 2', user: @first_user, post: @post1)
+      @comment3 = Comment.create(text: 'test comment 3', user: @first_user, post: @post1)
+      @comment4 = Comment.create(text: 'test comment 4', user: @first_user, post: @post1)
+      visit users_path
+      expect(page).to have_content(@comment1.text)
+      expect(page).to have_content(@comment2.text)
+      expect(page).to have_content(@comment3.text)
+      expect(page).to have_content(@comment4.text)
+    end
+  end
   end
 
   describe 'User show page test' do
