@@ -50,5 +50,61 @@ RSpec.describe 'User pages test index/show ', type: :feature do
     end
   end
 
+  describe 'User show page test' do
+    it 'Should show the username ' do
+      visit user_path(@first_user)
+      expect(page).to have_content(@first_user.name)
+    end
+
+    it 'Should show the profile picture' do
+      visit user_path(@first_user)
+      expect(page).to have_selector("img[src='#{@first_user.photo}']")
+    end
+
+    it 'Should show the Number of posts' do
+      visit user_path(@first_user)
+      expect(page).to have_text('Number of posts: 4')
+    end
+
+    it 'Should show the bio' do
+      visit user_path(@first_user)
+      expect(page).to have_content(@first_user.bio)
+    end
+
+    it 'Should show user recent 3 posts' do
+      visit user_path(@first_user)
+      expect(page).to have_content('Rspec test 2')
+      expect(page).to have_content('Rspec test 3')
+      expect(page).to have_content('Rspec test 4')
+    end
+
+    it 'Should show button to see all posts ' do
+      visit user_path(@first_user)
+      expect(page).to have_selector(:link_or_button, 'See all posts', count: 1)
+    end
+
+    it 'Should show button to see all posts ' do
+      visit user_path(@first_user)
+      expect(page).to have_selector(:link_or_button, 'See all posts', count: 1)
+    end
+
+    it 'Should show redirects me to that post\'s show page. ' do
+      visit user_path(@first_user)
+      click_on @post4.title
+      expect(page).to have_current_path(user_posts_path(@first_user, @post4))
+    end
+
+    it 'Should show redirects me to that post\'s show page. ' do
+      visit user_path(@first_user)
+      click_on @post4.title
+      expect(page).to have_current_path(user_posts_path(@first_user, @post4))
+    end
+
+    it 'Should show redirects me to that user\'s posts page. ' do
+      visit user_path(@first_user)
+      click_on 'See all posts'
+      expect(page).to have_current_path(user_posts_path(@first_user))
+    end
+  end
   
 end
