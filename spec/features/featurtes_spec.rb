@@ -42,7 +42,7 @@ RSpec.describe 'User pages test index/show ', type: :feature do
     end
 
     it 'should redirect to user\'s page' do
-      @second_user = User.create(name: 'David', photo: 'https://avatars.githubusercontent.com/u/101924220?v=4',
+      @second_user = User.create(name: 'Davido', photo: 'https://avatars.githubusercontent.com/u/101924220?v=4',
                                  bio: 'test for redirecting')
       visit users_path
       click_on @second_user.name

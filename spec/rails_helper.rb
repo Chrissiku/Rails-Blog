@@ -15,7 +15,6 @@ rescue ActiveRecord::PendingMigrationError => e
   exit 1
 end
 
-
 Capybara.register_driver :selenium_chrome do |app|
   Capybara::Selenium::Driver.new(app, browser: :chrome)
 end
@@ -30,5 +29,3 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # config.filter_gems_from_backtrace("gem name")
 end
-
-
