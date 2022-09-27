@@ -17,7 +17,8 @@ RSpec.describe 'Users', type: :request do
 
   describe 'GET /show' do
     before(:each) do
-      @user = User.create(name: 'Christian siku', photo: 'https://avatars.githubusercontent.com/u/101924220?v=4', bio: 'test for User')
+      @user = User.create(name: 'Christian siku', photo: 'https://avatars.githubusercontent.com/u/101924220?v=4',
+                          bio: 'test for User')
       get user_path(@user)
     end
 

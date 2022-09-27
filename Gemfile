@@ -3,15 +3,15 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.2'
 
-gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'devise'
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
+gem 'rubocop', '>= 1.0', '< 2.0'
 
 gem 'erb-formatter'
 gem 'rexml'
 
-gem 'ffi'
 gem 'childprocess'
+gem 'ffi'
 
 gem 'bootstrap', '~> 5.1.3'
 gem 'pg', '~> 1.1'
