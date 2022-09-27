@@ -59,6 +59,13 @@ rspec spec
 - GitHub: [@githubhandle](https://github.com/Chrissiku)
 - Twitter: [@twitterhandle](https://twitter.com/christian_siku)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/christian-siku/)
+
+👤 **Victor David**
+
+
+- Linkedin [victor-David](linkedin.com/in/victor-chiemerie-302a97230)
+- Twitter [victor-David](https://twitter.com/Victorjheart)
+- Github: [@Victor-David](https://github.com/jheart-vic)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

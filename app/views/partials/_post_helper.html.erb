@@ -1,5 +1,8 @@
 <div class="row  px-5 border">
-  <div class="col-12 align-self-start"><h5>Title : <%= post.title%> </h5></div>
+  <div class="col-12 align-self-start">
+    <h5>Title : <%= link_to(post.title, user_posts_path(@user, post)) %> </h5>
+  </div>
+
   <div class="col-12">
     <% if post.text.length > 110 %>
       <%= truncate(post.text, length: 110) ... %>

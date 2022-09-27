@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @user = User.find(params[:authorId])
+    @user = User.find_by(params[:authorId])
     @posts = @user.posts
   end
 
@@ -23,7 +23,8 @@ class PostsController < ApplicationController
     end
   end
 
-  private 
+  private
+
   def post_params
     params.require(:post).permit(:title, :text)
   end

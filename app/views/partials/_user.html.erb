@@ -3,7 +3,8 @@
         <img src=<%= user.photo %> alt= '<%= user.name + ' profile'%>' class="img-fluid rounded mx-auto d-block"/>
     </div>
     <div class="col-md-8 border border-dark p-2">
-        <h4><%= user.name %></h4>   
+        <p>User Id: <%= user.id%></p>
+        <h4><%= link_to(user.name, user_path(user)) %></h4>  
         <p>Number of posts: <%= user.posts.count%></p>
     </div>
 </div>
