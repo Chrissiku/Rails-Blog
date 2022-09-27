@@ -106,5 +106,4 @@ RSpec.describe 'User pages test index/show ', type: :feature do
       expect(page).to have_current_path(user_posts_path(@first_user))
     end
   end
-  
 end
