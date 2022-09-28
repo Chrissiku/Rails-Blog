@@ -70,8 +70,6 @@ Rails.application.configure do
 
   # Add mail delivery method to development environment
   
-
-
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
 
