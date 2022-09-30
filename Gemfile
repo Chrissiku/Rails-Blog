@@ -7,9 +7,9 @@ gem 'devise'
 gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+gem 'cancancan'
 gem 'erb-formatter'
 gem 'rexml'
-gem 'cancancan'
 
 gem 'childprocess'
 gem 'ffi'
@@ -38,8 +38,8 @@ group :development, :test do
 end
 
 group :development do
-  gem 'web-console'
   gem 'letter_opener'
+  gem 'web-console'
 end
 
 group :test do
