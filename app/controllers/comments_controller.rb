@@ -1,4 +1,10 @@
 class CommentsController < ApplicationController
+  # load_and_authorize_resource
+  def load_and_authorize_resource
+    load_resource
+    authorize_resource
+  end
+
   def create
     @post = Post.includes(:user).find_by(params[:post_id])
     @post = Post.find_by(params[:post_id])
@@ -12,6 +18,10 @@ class CommentsController < ApplicationController
       flash.now[:error] = 'An error occurred : Comment could not be created'
     end
   end
+
+  # def new
+  #   @comment = Comment.create(params)
+  # end
 
   private
 

@@ -6,16 +6,14 @@ Rails.application.routes.draw do
   end
 
   root 'users#index'
-
-
   
   resources :users, only: [:index, :show] do
-    resources :posts, only: [:index, :new, :form, :create]
+    resources :posts, only: [:index, :new, :form, :create, :destroy]
   end
 
 
   resources :posts do
-    resources :comments, only: [:create]
+    resources :comments, only: [:create, :new, :destroy]
     resources :likes, only: [:create]
   end
 

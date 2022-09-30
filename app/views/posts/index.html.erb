@@ -1,5 +1,7 @@
 <% @posts.each do |post| %>
-<%= render partial: 'partials/post', locals: {post: post} %>
+    <%= render partial: 'partials/post', locals: {post: post} %> 
     <%= render partial: 'partials/comment', locals: {post: post} %>
+    <%= link_to "Add comment", new_post_comment_path(post.user, post)  %>
 <% end %>
-<a class="btn btn-info" >Pagination</a>
+
+<%= link_to 'Pagination', new_user_post_path(user_id: @user.id), class:"btn btn-info" %>

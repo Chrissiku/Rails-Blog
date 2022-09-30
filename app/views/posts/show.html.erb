@@ -2,13 +2,20 @@
 <p>Comments: <span><%= @post.comments.count %></span>, Likes: <span><%= @post.likes.count %></span></p>
 
 <%= @post.text %>
-    <%= form_with model: Like, url: post_likes_path(@post.user, @post), method: :post do |form| %>
+    <%= form_with model: Like, url: post_likes_path(@post.user, @post.id), method: :post do |form| %>
     <% form.submit "Like" %>
+<% end %>
+
+<% if can? :destroy, @post %>
+    <%= button_to 'Delete post', user_post_path(@post.user, @post.id), method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %>
 <% end %>
 
 <% if @post.comments.length > 0 %>
     <% @post.comments.each do |comment| %>
     <p><%= comment.user.name %> : <%= comment.text %></p>
+    <% if can? :destroy, @comment %>
+        <%= button_to 'Delete comment', post_comment_path(comment.post, @comment.id), method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %>
+    <% end %>
 <% end %>
     <% else %>
     <p>There are no comments !!</p>

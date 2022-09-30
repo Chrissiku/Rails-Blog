@@ -9,6 +9,7 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 
 gem 'erb-formatter'
 gem 'rexml'
+gem 'cancancan'
 
 gem 'childprocess'
 gem 'ffi'
@@ -32,13 +33,13 @@ gem 'bootsnap', require: false
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
-  gem 'letter_opener'
   gem 'rails-controller-testing'
   gem 'rspec-rails'
 end
 
 group :development do
   gem 'web-console'
+  gem 'letter_opener'
 end
 
 group :test do

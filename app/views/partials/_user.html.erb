@@ -3,8 +3,10 @@
         <img src=<%= user.photo %> alt= '<%= user.name %>' class="img-fluid rounded mx-auto d-block"/>
     </div>
     <div class="col-md-8 border border-dark p-2">
-        <p>User Id: <%= user.id%></p>
+        <p>Id: <%= user.id%> <br/> Role: <%= user.role %></p>
+        <p></p>
         <h4><%= link_to(user.name, user_path(user)) %></h4>  
         <p>Number of posts: <%= user.posts.count%></p>
+        <%= link_to 'Create a new post', new_user_post_path(user_id: user.id), class: 'btn btn-info' %>
     </div>
 </div>
